@@ -1,12 +1,22 @@
-# tau-intro-selenium-py
+# selenium-automation-testing
 This repository contains the companion project for the
 *Introduction to Selenium WebDriver with Python* course
 taught by [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
 on [Test Automation University](https://testautomationu.applitools.com/).
-During the course, you will build a basic Web UI test automation solution using Python and Selenium WebDriver.
-Each chapter will add a new layer to the solution.
-Follow the instructions in this README to code the solution as you take each chapter.
-If you get stuck, refer to the example code in this repository for help.
+During the course, I have built a basic Web UI test automation solution using Python and Selenium WebDriver by following Andrews instructions and I've added many other features suggested by him but with no solutions in order to practice more by myself. Here are the suggestions added to the project:
+
+    search for different phrases,
+    search by clicking the button instead of typing RETURN
+    click a search result
+    expand "More Results" at the bottom of the result page
+    verify auto-complete suggestions pertain to the search text
+    search by selecting an auto-complete suggestion
+    search a new phrase from the results page
+    do an image search
+    do a video search
+    do a news search
+    change settings
+    change region
 
 # Setup Instructions
 
@@ -1122,29 +1132,6 @@ For massive parallel testing, try using
 Alternatively, many companies provide cloud-based solutions for parallel WebDriver testing.
 Check the *Resources* section below for a list.
 
-To learn more about parallel testing in general, read
-[To Infinity and Beyond: A Guide to Parallel Testing](https://automationpanda.com/2018/01/21/to-infinity-and-beyond-a-guide-to-parallel-testing/).
-
-Congrats! You have completed the guided part of this course!
-
-## Independent Exercises
-
-The guided course covered one very basic search test, but DuckDuckGo has many more features.
-Try to write some new tests for DuckDuckGo independently.
-Here are some suggestions:
-
-* search for different phrases
-* search by clicking the button instead of typing RETURN
-* click a search result
-* expand "More Results" at the bottom of the result page
-* verify auto-complete suggestions pertain to the search text
-* search by selecting an auto-complete suggestion
-* search a new phrase from the results page
-* do an image search
-* do a video search
-* do a news search
-* change settings
-* change region
 
 These tests will require new page objects, locators, and interaction methods.
 See how many tests you can automate on your own!
