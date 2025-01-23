@@ -105,39 +105,29 @@ The project is basically empty in the `master` branch.
 If you want to code along with the course, then create a branch for your work off the `master` branch.
 To create your own branch named `course/develop`, run:
 
-    > git checkout master
-    > git branch course/develop
-    > git checkout course/develop
+    > git checkout master (Switch to the master branch)
+    > git branch course/develop  (Create a new branch called course/develop)
+    > git checkout course/develop (Switch to the course/develop branch to start working on it) 
 
-The `example/*` branches contain the completed code for course parts.
-If you get stuck, you can always check the example code.
-
-* `example/2-pytest-setup`
-* `example/3-webdriver-setup`
-* `example/4-page-objects`
-* `example/5-locators`
-* `example/6-webdriver-calls`
-* `example/7-browser-config`
-* `example/8-race-conditions`
-* `example/9-parallel-testing`
-* `example/develop` (main development branch for the examples)
-
-(*Note:* Chapter 1 does not have any example code.)
-
-# Course Instructions
-
-## Chapter 1: Writing Our First Web UI Test
-
-*No Example Branch for this chapter*
+# 2- Writing Tests cases before automating them
 
 We should always write test *cases* before writing any test *code*.
 Test cases are procedures that exercise behavior to verify goodness and identify badness.
 Test code simply automates test cases.
 Writing a test case first helps us form our thoughts well.
 I like to write my test cases in
-[Gherkin](https://automationpanda.com/2017/01/26/bdd-101-the-gherkin-language/).
+[Gherkin](https://automationpanda.com/2017/01/26/bdd-101-the-gherkin-language/). Gherkin is a business-readable, structured format used to write test scenarios in Behavior-Driven Development (BDD). It uses the Given-When-Then syntax to describe test cases in a way that both technical and non-technical stakeholders can understand.
+Structure of Given-When-Then:
+Given: Describes the initial context or setup (preconditions).
+Example: Given the user is logged into their account.
+When: Specifies the action or event that triggers the behavior being tested.
+Example: When the user clicks on the "Submit" button.
+Then: Defines the expected outcome or result.
+Example: Then the user should see a confirmation message.
+This format ensures clarity and bridges communication between developers, QA testers, and business analysts.
+While Gherkin is a widely used format for writing test cases in Behavior-Driven Development (BDD), it is not mandatory for all Web UI test cases. The choice of format depends on the testing framework, team practices, and project requirements.
 
-In this course, we will automate a test for a basic DuckDuckGo search.
+In this project, we will automate a test for a basic DuckDuckGo search.
 [DuckDuckGo](https://duckduckgo.com/) is a popular search engine that's easy to test.
 Here's our first Web UI test case:
 
@@ -150,7 +140,7 @@ Scenario: Basic DuckDuckGo Search
     And the search result links pertain to "panda"
 ```
 
-## Chapter 2: Setting Up pytest
+# 3: Setting Up pytest
 
 *Example Branch: example/2-pytest-setup*
 
