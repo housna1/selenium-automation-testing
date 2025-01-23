@@ -4,15 +4,25 @@ The project focuses on testing the website https://duckduckgo.com/. I built the 
 
 # Steps of the project:
 1 - Setup Instructions
+
 2 - Writing Tests cases before automating them
+
 3 - Setting up Pytest
+
 4 - Setting up Selenium Web Driver
+
 5 - Defining Page Objects
+
 6 - Finding Locators for elements
+
 7 - Making Web Driver Calls
+
 8 - Configuring Multiple browsers 
+
 9 - Handling Race Conditions
+
 10 - Running tests in parallel 
+
 
 # 1- Setup Instructions
 
