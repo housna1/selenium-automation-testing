@@ -68,25 +68,9 @@ To install ChromeDriver and geckodriver on Windows:
 2. Move the executables into this folder.
 3. Add this folder to the *Path* environment variable. (See [How to Add to Windows PATH Environment Variable](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/).)
 
-### WebDriver Setup for *NIX
-
-To install ChromeDriver and geckodriver on Linux, macOS, and other UNIX variants,
-simply move them to the `/usr/local/bin/` directory:
-
-```bash
-$ mv /path/to/ChromeDriver /usr/local/bin
-$ mv /path/to/geckodriver /usr/local/bin
-```
-
-This directory should already be included in the system path.
-For troubleshooting, see:
-
-* [Setting the path on macOS](https://www.cyberciti.biz/faq/appleosx-bash-unix-change-set-path-environment-variable/)
-* [Setting the path on Linux](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix)
-
 ### Test WebDriver Setup
 
-To verify correct setup on any operating system, simply try to run them from the terminal:
+To verify correct setup on any operating system, simply try to run them from the terminal (cmd or Git Bash) :
 
 ```bash
 $ ChromeDriver
@@ -97,42 +81,21 @@ You may or may not see any output.
 Just verify that you can run them without errors.
 Use Ctrl-C to kill them.
 
+![image](https://github.com/user-attachments/assets/21ba44bf-d695-4361-94e7-4280d622d54b)
+
+
 ## Project Setup
 
-1. Clone this repository.
-2. Run `cd tau-intro-selenium-py` to enter the project.
-3. Run `pipenv install` to install the dependencies.
-4. Run `pipenv run python -m pytest` to verify that the framework can run tests.
-5. Create a branch for your code changes. (See *Repository Branching* below.)
+To have this code locally follow these steps:
 
-### Project Setup Troubleshooting
+1. In the command line Clone this repository by typing:
+   git clone https://github.com/housna1/selenium-automation-testing
+3. Run `cd selenium-automation-testing` to enter the project.
+4. Run `pipenv install` to install the dependencies listed in your Pipfile into a virtual environment. Dependencies are libraries or packages required for your project to run correctly. These could include Selenium for automation testing, testing frameworks like Pytest, or other utilities needed for your project.
+This will take about a minute, but what it will do is it will create a virtual environment for us. In Python, it's always good to create virtual environments for every project you create so that way you can manage your dependencies locally regardless of whatever packages the "global" machine has installed. This is indispensable when you need to work with packages of different versions or perhaps if you need a package that's not currently installed on your machine.
+6. Run `pipenv run python -m pytest` to verify that the framework can run tests.
+7. Create a branch for your code changes. (See *Repository Branching* below.)
 
-A few people attempting to set up this project
-encountered the following error when executing `pipenv run python -m pytest`:
-
-```
-ModuleNotFoundError: No module named 'atomicwrites'
-```
-
-I'm not exactly sure why `pipenv install` does not include `atomicwrites`.
-So far, I have seen it happen only on Windows.
-To resolve the error, please attempt the following:
-
-* Upgrade Python to the latest versions. The following worked for me on Windows:
-  * Python 3.8.3 (`python --version`)
-  * pip 20.1 (`pip --version`)
-  * pipenv 2018.11.26 (`pipenv --version`)
-* Run `pipenv update` from within the project directory.
-
-If upgrades don't work, try forcing package installation:
-
-* Run `pipenv install pytest` from within the project directory.
-* Run `pipenv install atomicwrites` from within the project directory.
-
-If these steps don't work in your project, then try to run without pipenv:
-
-* Install Python packages directly using `pip`.
-* Run tests directly using `python -m pytest`.
 
 ## Repository Branching
 
