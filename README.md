@@ -1,38 +1,34 @@
-# selenium-automation-testing
-This repository contains the companion project for the
-*Introduction to Selenium WebDriver with Python* course
-taught by [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
-on [Test Automation University](https://testautomationu.applitools.com/).
-During the course, I have built a basic Web UI test automation solution using Python and Selenium WebDriver by following Andrews instructions and I've added many other features suggested by him but with no solutions in order to practice more by myself. Here are the suggestions added to the project:
+# Selenium automation testing
+This repository contains a companion project for a basic Web UI test automation solution using Python, Selenium WebDriver, and Pytest.
+The project focuses on testing the website https://duckduckgo.com/. I built the foundation of the automation script from scratch to ensure clarity for individuals with no prior automation testing experience. Additionally, I have incorporated multiple test scenarios to enhance the project's functionality and demonstrate various testing approaches.
 
-    search for different phrases,
-    search by clicking the button instead of typing RETURN
-    click a search result
-    expand "More Results" at the bottom of the result page
-    verify auto-complete suggestions pertain to the search text
-    search by selecting an auto-complete suggestion
-    search a new phrase from the results page
-    do an image search
-    do a video search
-    do a news search
-    change settings
-    change region
+# Steps of the project:
+1 - Setup Instructions
+2 - Writing Tests cases before automating them
+3 - Setting up Pytest
+4 - Setting up Selenium Web Driver
+5 - Defining Page Objects
+6 - Finding Locators for elements
+7 - Making Web Driver Calls
+8 - Configuring Multiple browsers 
+9 - Handling Race Conditions
+10 - Running tests in parallel 
 
-# Setup Instructions
+# 1- Setup Instructions
 
 ## Python Setup
 
-You can complete this course using any OS: Windows, macOS, Linux, etc.
+You can complete this project using any OS: Windows, macOS, Linux, etc.
 
-This course requires Python 3.8 or higher.
+This project requires Python 3.8 or higher.
 You can download the latest Python version from [Python.org](https://www.python.org/downloads/).
 
-This course also requires [pipenv](https://docs.pipenv.org/).
-To install pipenv, run `pip install pipenv` from the command line.
+This project also requires [pipenv](https://docs.pipenv.org/). pipenv is a dependency management tool for Python projects, it's used to manage dependencies and virtual environments for your Selenium testing projects effectively. It simplifies the setup, ensures dependency consistency, and makes it easier to collaborate with other team members.
+To install pipenv, run `pip install pipenv` from the command line. 
 
 You should also have a Python editor/IDE of your choice.
 Good choices include [PyCharm](https://www.jetbrains.com/pycharm/)
-and [Visual Studio Code](https://code.visualstudio.com/docs/languages/python).
+and [Visual Studio Code](https://code.visualstudio.com/docs/languages/python). For me, I use VSC.
 
 You will also need [Git](https://git-scm.com/) to copy this project code.
 If you are new to Git, [try learning the basics](https://try.github.io/).
@@ -42,7 +38,7 @@ If you are new to Git, [try learning the basics](https://try.github.io/).
 For Web UI testing, you will need to install the latest versions of
 [Google Chrome](https://www.google.com/chrome/)
 and [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/).
-You can use other browsers with Selenium WebDriver, but the course will use Chrome and Firefox.
+You can use other browsers with Selenium WebDriver, but I will use Chrome and Firefox.
 
 You will also need to install the latest versions of the WebDriver executables for these browsers: [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) for Chrome
 and [geckodriver](https://github.com/mozilla/geckodriver/releases) for Firefox.
