@@ -1,6 +1,6 @@
 # Selenium automation testing
 This repository contains a companion project for a basic Web UI test automation solution using Python, Selenium WebDriver, and Pytest.
-The project focuses on testing the website https://duckduckgo.com/. I built the foundation of the automation script from scratch to ensure clarity for individuals with no prior automation testing experience. Additionally, I have incorporated multiple test scenarios to enhance the project's functionality and demonstrate various testing approaches.
+The project focuses on testing the website https://duckduckgo.com/. This project is based on a course in Test Automation University where I built the automation script from scratch to ensure clarity for individuals with no prior automation testing experience. Additionally, I have incorporated multiple test scenarios to enhance the project's functionality and demonstrate various testing approaches.
 
 # Steps of the project:
 1 - Setup Instructions
