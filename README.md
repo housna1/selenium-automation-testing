@@ -142,8 +142,6 @@ Scenario: Basic DuckDuckGo Search
 
 # 3: Setting Up pytest
 
-*Example Branch: example/2-pytest-setup*
-
 Let's implement the test using pytest.
 Create a new file named `test_search.py` under the `tests` directory,
 and add the following code:
@@ -186,9 +184,7 @@ Rerun the tests using `pipenv run python -m pytest`.
 The `test_basic_duckduckgo_search` should be the only test that runs,
 and it should fail due to the "Incomplete Test" exception.
 
-## Chapter 3: Setting Up Selenium WebDriver
-
-*Example Branch: example/3-webdriver-setup*
+## 4: Setting Up Selenium WebDriver
 
 [Selenium WebDriver](https://www.seleniumhq.org/projects/webdriver/)
 is a tool for automating Web UI interactions with live browsers.
@@ -265,9 +261,7 @@ Chrome should briefly pop up for a few seconds while the test is running.
 Make sure Chrome quits once the test is done.
 Then, commit your latest code changes.
 
-## Chapter 4: Defining Page Objects
-
-*Example Branch: example/4-page-objects*
+## 5: Defining Page Objects
 
 A **page object** is an object representing a Web page or component.
 They have *locators* for finding elements,
@@ -397,9 +391,7 @@ Rerun the test using `pipenv run python -m pytest`.
 The test should fail again, but this time, it should fail on one of the assertions.
 Then, commit your latest code changes.
 
-## Chapter 5: Finding Locators for Elements
-
-*Example Branch: example/5-locators*
+## 6: Finding Locators for Elements
 
 An *element* is a "thing" on a Web page.
 Browsers render elements such as buttons, dropdowns, and input fields using the page's HTML code.
@@ -462,7 +454,6 @@ As you move the cursor over HTML elements in the source,
 Chrome will highlight the elements on the page.
 Now, click the icon with the box and cursor in the upper-left corner of the DevTools pane.
 Move the cursor over elements on the page, and you will see them highlighted in the source.
-Neat!
 
 Try to find the search input element.
 Its HTML should look like this:
@@ -527,8 +518,6 @@ class DuckDuckGoSearchPage:
 ```
 
 Let's write locators for the `DuckDuckGoResultPage` next.
-Perform a search, inspect the page, and try to come up with locators on your own.
-
 Below is the code for `pages/result.py` with locators:
 
 ```python
@@ -581,9 +570,7 @@ Although the test will still fail,
 rerun it using `pipenv run python -m pytest` to make sure our changes did no harm.
 Then, commit your latest code changes.
 
-## Chapter 6: Making WebDriver Calls
-
-*Example Branch: example/6-webdriver-calls*
+## 7: Making WebDriver Calls
 
 Now we can implement all the page object methods using WebDriver calls.
 The [WebDriver API for Python](https://selenium-python.readthedocs.io/api.html)
